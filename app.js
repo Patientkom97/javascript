@@ -118,13 +118,81 @@
 //   }
 //   return resultat;
 // }
-function estBissextile(année) {
-    if (année % 4 === 0) {
-      return true;
-    }
-      if (année % 100 === 0) {
-            return année % 400 === 0;
-        }
-    return false;
+// function estBissextile(année) {
+//     if (année % 4 === 0) {
+//       return true;
+//     }
+//       if (année % 100 === 0) {
+//             return année % 400 === 0;
+//         }
+//     return false;
+// }
+let prenom = "Jean";
+console.log(`Bonjour ${prenom} bienvenue sur notre page`)
+
+let number1 = 4
+let number2 = 6
+let sum = number1 + number2
+console.log(sum)
+
+let mot1 = "vrai"
+let mot2 = "faux"
+let mot3 = "neutre"
+let phrase = mot1 + mot2 + mot3
+console.log(phrase)
+
+let minute1 = 45
+let seconde1 = minute1 * 60
+console.log(`${minute1} minutes valent ${seconde1} secondes`)
+
+let nombre1 = 20
+let nombre2 = 25
+let pont = nombre1
+nombre1 = nombre2
+nombre2 = pont
+console.log(`${nombre1} ${nombre2}`)
+
+let nombre3 = 40
+let nombre4 = 50
+let nombre5 = 70
+
+let moyenne = (nombre3 + nombre4 + nombre5) / 3
+
+console.log(`Voici la moyenne ${moyenne}`)
+
+
+
+let num = 4
+let reste = num % 2
+let comparaison = reste === 0
+if (comparaison) {
+    console.log("pair")
 }
-estBissextile(2020); 
+else console.log("impair")
+
+let motDePasse = "kadealove"
+let motDePasseDeComparaison = "executive"
+let verificationMotDePasse = motDePasse === motDePasseDeComparaison
+if (verificationMotDePasse) {
+    console.log("Mot de passe vérifié")
+
+}
+else {
+    console.log("Veuillez entrer le même mot de passe")
+}
+const elie = {
+    nom: "elie",
+    race: "amelioré",
+    proprietaire: {
+        nom: "fifi",
+        adresse: {
+            pays: "rdc",
+            commune: "Ngaliema",
+            quartier: " Joli parc ",
+            avenue: " Parc",
+        }
+    },
+    aboyer: function () {
+        alert(`${this.nom} woof`)
+    }
+}a
