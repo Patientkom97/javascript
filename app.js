@@ -86,18 +86,45 @@
 //    return upperPrenom + " " + upperNom;
 // }
 // nomComplet("jean", "dupont");
-const smartphone = {
-    id: "SP-01",
-    marque: "Samsung",
-    modele: "Galaxy A54",
-    prixUSD: 350,
-    enStock: true
-};
-// 1. Lire (Notation pointée)
-console.log(smartphone.modele);     // "Galaxy A54"
+// const smartphone = {
+//     id: "SP-01",
+//     marque: "Samsung",
+//     modele: "Galaxy A54",
+//     prixUSD: 350,
+//     enStock: true
+// };
+// // 1. Lire (Notation pointée)
+// console.log(smartphone.modele);     // "Galaxy A54"
 
-// 2. Modifier
-smartphone.prixUSD = 320;           // Remise accordée !
+// // 2. Modifier
+// smartphone.prixUSD = 320;           // Remise accordée !
 
-// 3. Ajouter une nouvelle clé
-smartphone.garantieMois = 24;
+// // 3. Ajouter une nouvelle clé
+// smartphone.garantieMois = 24;
+// const inventaire = [
+//     { id: 1, nom: "Ordinateur Portable", prix: 850, categorie: "INFORMATIQUE", enStock: true },
+//     { id: 2, nom: "Souris Sans Fil",      prix: 25,  categorie: "ACCESSOIRE",   enStock: true },
+//     { id: 3, nom: "Casque Audio",         prix: 60,  categorie: "AUDIO",        enStock: false },
+//     { id: 4, nom: "Clavier Mécanique",    prix: 75,  categorie: "ACCESSOIRE",   enStock: true }
+// ];
+
+// console.log(inventaire[0].nom);
+// function afficherProps(obj, nomObjet) {
+//   let resultat = "";
+//   for (let i in obj) {
+//     if (obj.hasOwnProperty(i)) {
+//       resultat += `${nomObjet}.${i} = ${obj[i]}\n`;
+//     }
+//   }
+//   return resultat;
+// }
+function estBissextile(année) {
+    if (année % 4 === 0) {
+      return true;
+    }
+      if (année % 100 === 0) {
+            return année % 400 === 0;
+        }
+    return false;
+}
+estBissextile(2020); 
